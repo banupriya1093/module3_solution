@@ -1,56 +1,79 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <title>Food, LLC - Our Menu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Module 3 Assignment</title>
+  <!-- Bootstrap 3.3.7 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Custom styles (no inline styles) -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Navbar (not fixed; will scroll away with the page) -->
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid nav-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Food, LLC</a>
 
-<nav class="navbar navbar-default">
+        <!-- Mobile menu button (visible only on xs) -->
+        <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collapsible mobile menu (visible only on xs) -->
+      <div id="mobile-menu" class="collapse navbar-collapse visible-xs">
+        <ul class="nav navbar-nav mobile-menu-list">
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Sushi</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page heading centered with Bootstrap class -->
+  <div class="container">
+    <h1 class="text-center page-title">Our Menu</h1>
+  </div>
+
+  <!-- Single tall section using Bootstrap grid -->
   <div class="container-fluid">
-
-    <div class="navbar-header">
-      <button type="button"
-              class="navbar-toggle collapsed visible-xs"
-              data-toggle="collapse"
-              data-target="#collapsable-nav">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class="navbar-brand" href="#">Food, LLC</a>
-    </div>
-
-    <div id="collapsable-nav" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav visible-xs text-center">
-        <li><a href="#">Chicken</a></li>
-        <li><a href="#">Beef</a></li>
-        <li><a href="#">Sushi</a></li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
-
-<h1 class="text-center">Our Menu</h1>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 tall-section">
-      <p>
-        Scroll down. This section is intentionally tall to satisfy the assignment.
-      </p>
+    <div class="row">
+      <div class="col-xs-12 menu-section">
+        <div class="container">
+          <div class="menu-inner">
+            <h2 class="text-center">Chicken</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum, tortor sit amet
+              posuere cursus, libero odio facilisis lorem, in suscipit magna nibh ut orci. Suspendisse
+              potenti. Integer sit amet consectetur enim. Pellentesque habitant morbi tristique senectus
+              et netus et malesuada fames ac turpis egestas. Curabitur ac pulvinar nisi, in viverra velit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet arcu a sem efficitur
+              facilisis. Integer posuere diam vel nibh dictum, sed hendrerit sapien vehicula. Fusce at
+              libero at orci lacinia egestas. Mauris varius, neque ut pulvinar suscipit, lectus nisl
+              feugiat augue, non efficitur sapien mi quis purus.
+            </p>
+            <p>
+              (Additional filler content to ensure the section is tall enough to require scrolling.)
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+  <!-- jQuery and Bootstrap JS (required for the collapse toggle) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
